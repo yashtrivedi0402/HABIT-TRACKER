@@ -31,7 +31,7 @@ A modern habit tracking web application designed to help users build consistency
 
 ## Live Demo
 
-(Add GitHub Pages URL)
+https://yashtrivedi0402.github.io/HABIT-TRACKER/
 
 ## Future Enhancements
 
