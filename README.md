@@ -56,8 +56,9 @@ https://yashtrivedi0402.github.io/HABIT-TRACKER/
 
 <img width="1705" height="909" alt="Screenshot 2026-06-07 120325" src="https://github.com/user-attachments/assets/1156a788-73ef-4be6-9b39-b5d80db7c8d6" />
 
+## 🐳 Containerization & Deployment
 
-## 🐳 Docker Deployment
+This application has been containerized using Docker and served through Nginx for consistent deployment across environments.
 
 ### Build Docker Image
 
@@ -65,16 +66,46 @@ https://yashtrivedi0402.github.io/HABIT-TRACKER/
 docker build -t habit-tracker .
 ```
 
-### Run Docker Container
+### Run Locally
 
 ```bash
 docker run -d -p 8081:80 --name habit-app habit-tracker
 ```
 
-### Access Application
+Access the application:
 
 ```text
 http://localhost:8081
+```
+
+### Docker Hub
+
+Pull the pre-built image directly from Docker Hub:
+
+```bash
+docker pull yashtri0204/habit-tracker:v1
+```
+
+Run the Docker Hub image:
+
+```bash
+docker run -d -p 8081:80 yashtri0204/habit-tracker:v1
+```
+
+### Deployment Workflow
+
+```text
+Source Code
+     ↓
+GitHub Repository
+     ↓
+Docker Build
+     ↓
+Docker Hub Registry
+     ↓
+Docker Container
+     ↓
+Running Application
 ```
 
 ---
@@ -89,7 +120,17 @@ HABIT-TRACKER/
 ├── README.md
 ```
 
----
+### Key Files
+
+| File         | Purpose                      |
+| ------------ | ---------------------------- |
+| index.html   | Main application             |
+| Dockerfile   | Container build instructions |
+| README.md    | Project documentation        |
+
+```
+```
+
 
 ## 🔮 Future Enhancements
 
