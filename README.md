@@ -2,45 +2,55 @@
 
 A modern and responsive Habit Tracker web application designed to help users build consistency, track daily habits, and visualize progress through interactive analytics.
 
-## 🌐 Live Demo
+The project was developed as a frontend application and later containerized using Docker, published to Docker Hub, and deployed on AWS EC2 using Nginx.
+
+---
+
+# 🌐 Live Demo
+
+**GitHub Pages:**
 
 https://yashtrivedi0402.github.io/HABIT-TRACKER/
 
 ---
 
-## ✨ Features
+# ✨ Features
 
 * Create and manage daily habits
-* Track habit completion status
+* Track daily progress and completion status
 * Interactive analytics dashboard
-* Beautiful Glassmorphism UI
-* Responsive design for desktop and mobile
-* Local Storage support for persistent data
-* Real-time progress visualization using Chart.js
+* Modern Glassmorphism user interface
+* Fully responsive design
+* Local Storage based persistence
+* Real-time charts powered by Chart.js
+* Dockerized deployment support
+* Cloud deployment ready
 
 ---
 
-## 🛠️ Tech Stack
+# 🛠️ Tech Stack
 
-### Frontend
+## Frontend
 
 * HTML5
 * CSS3
 * JavaScript (ES6)
 * Chart.js
 
-### DevOps
+## DevOps & Cloud
 
 * Git
 * GitHub
+* GitHub Pages
 * Docker
+* Docker Hub
 * Nginx
+* AWS EC2
+* Ubuntu 22.04 LTS
 
 ---
 
-## 📸 Screenshots
-
-### Dashboard Overview
+# 📸 Screenshots
 
 <img width="1830" height="845" alt="Screenshot 2026-06-07 025113" src="https://github.com/user-attachments/assets/efb970e2-91bd-44fd-9158-1259a71c64d6" />
 
@@ -56,61 +66,105 @@ https://yashtrivedi0402.github.io/HABIT-TRACKER/
 
 <img width="1705" height="909" alt="Screenshot 2026-06-07 120325" src="https://github.com/user-attachments/assets/1156a788-73ef-4be6-9b39-b5d80db7c8d6" />
 
-## 🐳 Containerization & Deployment
 
-This application has been containerized using Docker and served through Nginx for consistent deployment across environments.
+---
 
-### Build Docker Image
+# 🐳 Containerization & Deployment
+
+This application has been containerized using Docker and served through Nginx to ensure portability and consistent deployment across environments.
+
+## Build Docker Image
 
 ```bash
 docker build -t habit-tracker .
 ```
 
-### Run Locally
+## Run Locally
 
 ```bash
 docker run -d -p 8081:80 --name habit-app habit-tracker
 ```
 
-Access the application:
+Access:
 
 ```text
 http://localhost:8081
 ```
 
-### Docker Hub
+---
 
-Pull the pre-built image directly from Docker Hub:
+# 📦 Docker Hub
+
+Pre-built Docker image is available on Docker Hub.
+
+Pull Image:
 
 ```bash
 docker pull yashtri0204/habit-tracker:v1
 ```
 
-Run the Docker Hub image:
+Run Image:
 
 ```bash
 docker run -d -p 8081:80 yashtri0204/habit-tracker:v1
 ```
 
-### Deployment Workflow
+Docker Hub Repository:
+
+https://hub.docker.com/r/yashtri0204/habit-tracker
+
+---
+
+# ☁️ AWS EC2 Deployment
+
+The application has been successfully deployed on an Ubuntu-based AWS EC2 instance.
+
+## Deployment Process
 
 ```text
-Source Code
-     ↓
 GitHub Repository
-     ↓
+        ↓
 Docker Build
-     ↓
-Docker Hub Registry
-     ↓
+        ↓
+Docker Hub
+        ↓
+AWS EC2
+        ↓
 Docker Container
-     ↓
+        ↓
 Running Application
+```
+
+## Commands Used
+
+Install Docker:
+
+```bash
+sudo apt update
+sudo apt install docker.io -y
+```
+
+Pull Docker Image:
+
+```bash
+docker pull yashtri0204/habit-tracker:v1
+```
+
+Run Container:
+
+```bash
+docker run -d -p 80:80 --name habit-app yashtri0204/habit-tracker:v1
+```
+
+Verify Running Containers:
+
+```bash
+docker ps
 ```
 
 ---
 
-## 📂 Project Structure
+# 📂 Project Structure
 
 ```text
 HABIT-TRACKER/
@@ -118,35 +172,86 @@ HABIT-TRACKER/
 ├── index.html
 ├── Dockerfile
 ├── README.md
-```
-
-### Key Files
-
-| File         | Purpose                      |
-| ------------ | ---------------------------- |
-| index.html   | Main application             |
-| Dockerfile   | Container build instructions |
-| README.md    | Project documentation        |
 
 ```
-```
 
+## Key Files
 
-## 🔮 Future Enhancements
+| File         | Purpose                         |
+| ------------ | ------------------------------- |
+| index.html   | Main application logic and UI   |
+| Dockerfile   | Docker image build instructions |
+| README.md    | Project documentation           |
+---
 
-* User Authentication
-* Cloud Database Integration
-* Habit Streak Tracking
-* Reminder Notifications
-* AWS Deployment
-* GitHub Actions CI/CD Pipeline
-* Monitoring with Prometheus & Grafana
+# 🎯 Learning Outcomes
+
+Through this project, I gained hands-on experience with:
+
+* Git and GitHub workflow
+* Docker image creation
+* Docker container lifecycle management
+* Docker Hub image publishing
+* Linux server administration
+* AWS EC2 deployment
+* Nginx web serving
+* Cloud-based application deployment
 
 ---
 
-## 👨‍💻 Author
+# 🔮 Future Enhancements
 
-Yash Trivedi
+# 🔮 Future Enhancements
+
+## Phase 1: CI/CD Automation (Next Priority)
+
+* GitHub Actions CI Pipeline
+* Automatic Docker Image Build
+* Automatic Docker Hub Push
+* Build Status Badge in README
+
+## Phase 2: Production Deployment
+
+* Automatic EC2 Deployment
+* Zero-Downtime Deployment Strategy
+* Environment Variable Management
+* Production Configuration Management
+
+## Phase 3: Monitoring & Observability
+
+* Prometheus Integration
+* Grafana Dashboards
+* Container Health Monitoring
+* Resource Usage Metrics
+
+## Phase 4: Container Orchestration
+
+* Docker Compose Setup
+* Multi-Container Architecture
+* Kubernetes Deployment
+* Kubernetes Service & Ingress Configuration
+
+## Phase 5: Infrastructure as Code
+
+* Terraform for AWS Infrastructure
+* Automated EC2 Provisioning
+* Security Group Automation
+* Reproducible Infrastructure
+
+## Phase 6: Production Readiness
+
+* Custom Domain Configuration
+* HTTPS using Let's Encrypt
+* Reverse Proxy Configuration
+* Log Aggregation & Monitoring
+
+```
+```
+
+
+# 👨‍💻 Author
+
+**Yash Trivedi**
 
 GitHub:
 https://github.com/yashtrivedi0402
