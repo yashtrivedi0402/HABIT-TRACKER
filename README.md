@@ -66,6 +66,11 @@ https://yashtrivedi0402.github.io/HABIT-TRACKER/
 
 <img width="1705" height="909" alt="Screenshot 2026-06-07 120325" src="https://github.com/user-attachments/assets/1156a788-73ef-4be6-9b39-b5d80db7c8d6" />
 
+<img width="1897" height="949" alt="Screenshot 2026-06-11 170243" src="https://github.com/user-attachments/assets/6f7d68bc-31f5-43de-b53e-20714cb59a1d" />
+
+<img width="1575" height="724" alt="Screenshot 2026-06-11 170257" src="https://github.com/user-attachments/assets/223fd1be-f1ce-441c-af36-2171dac3b67b" />
+
+<img width="1860" height="679" alt="Screenshot 2026-06-11 170230" src="https://github.com/user-attachments/assets/9f3181ae-9d00-4da3-b5f3-c6b7145a8490" />
 
 ---
 
@@ -199,7 +204,6 @@ Through this project, I gained hands-on experience with:
 
 ---
 
-# 🔮 Future Enhancements
 
 # 🔮 Future Enhancements
 
